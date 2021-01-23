@@ -1,6 +1,9 @@
 <template>
-  <div class="home">
+  <div>
     <nav-comp></nav-comp>
+    <v-container>
+        <h3>Ficha vendedor</h3>
+    </v-container>
   </div>
 </template>
 
