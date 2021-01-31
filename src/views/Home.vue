@@ -14,7 +14,8 @@
               class="grey darken-4"
               color="gray"
             ></v-img>
-            <v-card-title class="title">height</v-card-title>
+            <v-card-title class="title">Bienvenido</v-card-title>
+            <p class="ml-5 pb-5">Bienvenido al sistema de Gestión de Ventas de WorldParts</p>
           </v-card>
         </v-col>
       </v-row>
@@ -22,11 +23,7 @@
 </v-container>
       
       <v-row>
-      <!-- init venta mensual y mensual -->
-      <sales></sales>
-
-
-      <!-- Ranking vendedores -->
+      <kpi-sales></kpi-sales>
       <ranking></ranking>
       <v-col></v-col>
     </v-row>
@@ -36,14 +33,14 @@
 
 <script>
 import NavComp from '@/components/NavComp'
-import Sales from '@/components/Sales'
+import KpiSales from '@/components/KpiSales'
 import Ranking from '@/components/Ranking'
 
 export default {
   name: 'Home',
   components: {
     NavComp,
-    Sales,
+    KpiSales,
     Ranking
   }
 }

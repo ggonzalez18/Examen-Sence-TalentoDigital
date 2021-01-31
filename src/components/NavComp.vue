@@ -9,7 +9,7 @@
           <v-btn text ><v-icon class="mr-1">mdi-clipboard-text</v-icon>Pedidos</v-btn>
           <v-spacer></v-spacer>
           <v-btn text >Perfil<v-icon>mdi-account-box</v-icon></v-btn>
-          <v-btn text to="/">SALIR<v-icon>mdi-exit-to-app</v-icon></v-btn>
+          <v-btn text @click="logout">SALIR<v-icon>mdi-exit-to-app</v-icon></v-btn>
         </v-row>
       </v-container>
     </v-app-bar>
@@ -17,8 +17,11 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
-
+methods:{
+  ...mapActions(['logout'])
+}
 }
 </script>
 
